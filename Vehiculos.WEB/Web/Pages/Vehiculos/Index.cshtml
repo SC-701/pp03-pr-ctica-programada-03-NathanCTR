@@ -12,11 +12,11 @@
 <section class="page-section bg-light" id="principal">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Listado de vehiculos</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Programación Web Avanzada Johnnatan Chacón</h2>
+            <h3 class="section-subheading text-muted">Menu de Vehiculo</h3>
         </div>
         <div class="text-center mb-4">
-            <a type="button" class="btn btn-group-lg btn-success btn-lg" asp-page="./Agregar"><i class="bi bi-plus-square"></i> Agregar</a>
+            <a type="button" class="btn btn-group-lg btn-success btn-lg" asp-page="./Agregar"><i class="bi bi-plus-square"></i> Agregar Vehiculo</a>
         </div>
         <div class="row">
             @if (Model.vehiculos != null)
@@ -28,9 +28,9 @@
                                 <h5 class="card-title"><i class="bi bi-car-front-fill"></i> @Html.DisplayFor(modelo => vehiculo.Marca) @Html.DisplayFor(modelo => vehiculo.Modelo)</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">@Html.DisplayFor(modelo => vehiculo.Anio)</h6>
                                 <p class="card-text">@Html.DisplayFor(modelo => vehiculo.Placa)</p>
-                                <a type="button" class="btn btn-primary" asp-page="./Detalle" asp-route-id="@vehiculo.Id"><i class="bi bi-info-square"></i> Detalle</a>
-                                <a type="button" class="btn btn-warning" asp-page="./Editar" asp-route-id="@vehiculo.Id"><i class="bi bi-pencil-square"></i> Editar</a>
-                                <a type="button" class="btn btn-danger" asp-page="./Eliminar" asp-route-id="@vehiculo.Id"><i class="bi bi-trash3-fill"></i> Eliminar</a>
+                                <a type="button" class="btn btn-primary" asp-page="./Detalle" asp-route-id="@vehiculo.Id"><i class="bi bi-info-square"></i> Detalles del Vehiculo</a>
+                                <a type="button" class="btn btn-warning" asp-page="./Editar" asp-route-id="@vehiculo.Id"><i class="bi bi-pencil-square"></i> Editar Vehiculo</a>
+                                <a type="button" class="btn btn-danger" asp-page="./Eliminar" asp-route-id="@vehiculo.Id"><i class="bi bi-trash3-fill"></i> Eliminar Vehiculo</a>
                             </div>
                         </div>
                     </div>
